@@ -1,13 +1,11 @@
-const cards = document.querySelectorAll('.card');
+const reveals = document.querySelectorAll('.reveal');
 
-window.addEventListener('scroll', () => {
-  cards.forEach(card => {
-    const position = card.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-
-    if (position < screenHeight - 100) {
-      card.style.opacity = 1;
-      card.style.transform = 'translateY(0)';
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
     }
   });
-});
+}, { threshold: 0.1 });
+
+reveals.forEach(el => observer.observe(el));
