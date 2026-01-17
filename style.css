@@ -123,15 +123,40 @@ body {
 }
 
 /* FOOTER */
-footer {
-  border-top: 1px solid #eee;
-}
+<footer class="footer-main">
+  <div class="container footer-grid">
+    
+    <div>
+      <h3>TSA Media</h3>
+      <p>
+        Creative agency helping brands grow
+        through content, branding and marketing.
+      </p>
+    </div>
 
-.footer {
-  padding: 24px 0;
-  text-align: center;
-  color: #777;
-}
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li>Social Media</li>
+        <li>Reels & Ads</li>
+        <li>Branding</li>
+        <li>Marketing</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Connect</h4>
+      <a href="https://www.instagram.com/tsamedia.in/" target="_blank">
+        Instagram
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 TSA Media. All rights reserved.
+  </div>
+</footer>
 
 /* DESKTOP */
 @media (min-width: 768px) {
